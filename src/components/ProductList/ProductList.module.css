@@ -1,0 +1,61 @@
+/* src/components/ProductList.module.css */
+.container {
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.select {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.addButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+}
+
+.productList {
+  list-style: none;
+  padding: 0;
+}
+
+.productImage {
+  max-width: 300px; /* Максимальная ширина 300px */
+  max-height: 300px; /* Максимальная высота 300px */
+  width: 100%; /* Устанавливаем ширину на 100%, чтобы изображение адаптировалось */
+  height: auto; /* Высота автоматически будет подстраиваться по пропорциям */
+  object-fit: cover; /* Чтобы изображение заполнило доступную область, сохраняя пропорции */
+}
+
+.productItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: #d32f2f;
+}
